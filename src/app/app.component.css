@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+article, section, aside, hgroup, nav, header, footer, figure, figcaption
+{
+  display: block;
+}
+/*Body Styling*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Container Styling*/
+#container{
+  margin: auto auto;
+  max-width: 960px;
+}
+/*Header*/
+header {
+  width: 94%;
+  padding: 3%;
+  background-color: #209a9b;
+}
+/*Header With Title ID*/
+header #title {
+  font-size: 50px;
+  color: #fff;
+}
+/*Navigation Bar*/
+nav {
+  width: 97%;
+  background-color: #198278;
+  padding: 0 1.5% 0 1.5%;
+}
+/*Navigation Bar With UnOrdered List*/
+nav ul li {
+  display: inline-block;
+  padding: 15px 1.5% 15px 1.5% ;
+}
+/*Navigation Bar With UnOrdered List Links*/
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2em;
+}
+nav ul li a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+/*Content*/
+#content {
+  float: left;
+  padding: 3%;
+  width: 64%;
+  background-color: #eee;
+  overflow: auto;
+
+}
+/*Content with h2*/
+#content h2 {
+  font-size: 18px;
+  padding-top: 25px;
+  font-weight: 200;
+
+}
+/*Aside*/
+aside {
+  float: right;
+  padding: 3%;
+  width: 24%;
+  background-color: gainsboro;
+  overflow: scroll;
+
+}
+/*Footer*/
+footer{
+  width: 94%;
+  padding: 3%;
+  clear: both;
+  background-color: #209a9b;
+  border-top: 5px solid #82c9e6;
+  color: #fff;
+  text-align: center;
+}
+
+/*For Tablet and Ipod's*/
+@media all and (max-width : 768px) {
+  header {
+    text-align: center;
+  }
+  nav {
+    text-align: center;
+  }
+  #content {
+    width: 94%;
+    padding: 3%;
+  }
+  #sidebar {
+    width: 94%;
+    padding: 3%;
+    border-top: 3px solid #E64A19;
+  }
+}
+/*For Mobile Devices*/
+@media all and (max-width : 330px) {
+  nav ul li {
+    display:block;
+    width: 94%;
+  }
+}

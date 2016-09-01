@@ -1,0 +1,24 @@
+<h1>Welcome to Search-App</h1>
+<p>Etiam nisl tortor, hendrerit et mauris nec, tincidunt congue libero. Donec ac sodales lacus. Suspendisse egestas nibh vel ex imperdiet dignissim. Pellentesque massa dui, lacinia eu tempus id, faucibus in dolor. Pellentesque leo magna, tincidunt vitae nisl et, pharetra vestibulum nibh. Nunc id porttitor sapien, in volutpat dui. Curabitur tellus massa, sollicitudin et molestie non, hendrerit elementum lacus. Etiam dolor est, consectetur eu sollicitudin nec, mattis id arcu.</p>
+<div>
+<form>
+<fieldset>
+<legend>Search-App</legend>
+<p>* Click search to make a call to API</p>
+<p>* Click GetData to get the API Data</p>
+<label for="userId">User Name</label>
+<input type="text" id="userId" #userId>
+<button (click)="onSubmit()">Search</button>
+<button (click)="onGetData()">Get Data</button>
+<button (click)="myDiv.innerHTML = ''">Reset Data</button>
+</fieldset>
+</form>
+<div>
+<div id="myDiv" #myDiv>
+<ul>
+  <li *ngFor="let item of items">{{item.username }}</li>
+</ul>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam massa, tristique eget vestibulum sit amet, posuere molestie erat. Quisque ultricies vel ante sed varius. Nunc venenatis elit lorem,  velit. Nullam ut tellus turpis.  ultrices ligula vitae imperdiet tempor. In bibendum ipsum tellus, id varius justo facilisis nec.</p>
+
+

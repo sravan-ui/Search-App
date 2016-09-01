@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>BusCar SPA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+</head>
+<body>
+<div id="container">
+  <!-- header -->
+  <header id="header">
+    <h1 id="title">BusCar SPA</h1>
+  </header>
+  <!-- Navigation -->
+  <nav id="menu" class="clearfix">
+    <ul>
+      <li><a [routerLink] = "['/home']">Home</a></li>
+      <li><a [routerLink] = "['/about']">About</a></li>
+      <li><a [routerLink] = "['/contact']">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Main Content area -->
+  <section id="content">
+    <article>
+      <router-outlet></router-outlet>
+    </article>
+
+    <article>
+    </article>
+  </section>
+  <!-- Sidebar -->
+  <aside  id="sidebar">
+    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+    </p>
+    <!-- Sidebar content -->
+  </aside>
+  <!-- Footer -->
+  <footer id="footer" class="clearfix">
+    Copyright &copy Sravan Kumar 2016
+  </footer>
+</div>
+</body>
+</html>
